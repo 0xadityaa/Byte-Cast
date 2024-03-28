@@ -3,6 +3,7 @@ const express = require("express");
 const { spawn } = require("child_process");
 const path = require("path");
 const SocketIO = require("socket.io");
+const cors = require("cors");
 
 const port = 3000;
 const app = express();
@@ -56,6 +57,8 @@ ffmpegProcess.on("close", (code) => {
 });
 
 app.use(express.static(path.resolve("./public")));
+
+app.use(cors());
 
 io.on("connection", (socket) => {
   console.log("Socket connection: ", socket.id);
