@@ -36,9 +36,9 @@ This project is a Software as a Service (SAAS) application that allows users to 
 
 ## TO-DO
 1. **Camera Feed Capture:** This functionality might remain on the client side using Web APIs, but server components can handle user confirmation or error messages.
-**FFMPEG Encoding:** FFMpeg will likely remain a server-side process, but Server Components can display encoding progress or status updates.
-**RTMP Streaming:** Server Components can't directly handle the streaming process, but they can manage user input (stream key selection) and potentially trigger the streaming initiation on the server side.
-**Real-time Communication:** Socket.io integration with Next.js. Might set up event listeners on the server side within Server Components to handle incoming messages and update the UI accordingly.
+2. **FFMPEG Encoding:** FFMpeg will likely remain a server-side process, but Server Components can display encoding progress or status updates.
+3. **RTMP Streaming:** Server Components can't directly handle the streaming process, but they can manage user input (stream key selection) and potentially trigger the streaming initiation on the server side.
+4. **Real-time Communication:** Socket.io integration with Next.js. Might set up event listeners on the server side within Server Components to handle incoming messages and update the UI accordingly.
 
 ## License
 This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
